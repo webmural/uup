@@ -1,0 +1,26 @@
+.rose {
+  --rose: gold;
+  background: var(--rose);
+  color: #111;
+}
+
+.rose ::selection {
+  background: #111;
+  color: var(--rose);
+}
+
+.rose :any-link {
+  color: indigo;
+}
+
+@media (prefers-contrast: less) {
+  .rose {
+    --rose: lightpink;
+  }
+}
+
+@media (prefers-contrast: more) {
+  .rose {
+    --rose: mistyrose;
+  }
+}
